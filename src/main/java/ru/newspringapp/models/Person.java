@@ -16,5 +16,5 @@ public class Person {
 
     private String full_name;
 
-    private Date birth_date; //TODO: проверить какой тип выбрать
+    private String birth_date; //TODO: проверить какой тип выбрать
 }

@@ -4,20 +4,20 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import ru.newspringapp.dao.PersonDAO;
+import ru.newspringapp.dao.BookDAO;
 
 @RestController
-@RequestMapping("/people")
-public class PeopleController {
-    public final PersonDAO personDAO;
+@RequestMapping("/books")
+public class BooksController {
+    public final BookDAO bookDAO;
 
-    public PeopleController(PersonDAO libraryDAO) {
-        this.personDAO = libraryDAO;
+    public BooksController(BookDAO bookDAO) {
+        this.bookDAO = bookDAO;
     }
 
     @GetMapping()
     public String index(Model model) {
-        model.addAttribute("people", personDAO.index());
-        return "people/index";
+        model.addAttribute("books", bookDAO.index());
+        return "books/index";
     }
 }
