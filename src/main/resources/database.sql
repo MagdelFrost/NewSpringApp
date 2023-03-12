@@ -1,7 +1,7 @@
 CREATE TABLE Person (
     id  INT GENERATED ALWAYS AS IDENTITY,
     full_name VARCHAR(100) UNIQUE,
-    birth_date DATE NOT NULL,
+    age INT NOT NULL,
     PRIMARY KEY (id)
 );
 

@@ -11,9 +11,9 @@
     <input type="text" th:field="*{full_name}" id="full_name"/>
     <div style="color:red" th:if="${#fields.hasErrors('full_name')}" th:errors="*{full_name}">Name Error</div>
     <br/>
-    <label for="birth_date">Enter birth_date: </label>
-    <input type="text" th:field="*{birth_date}" id="birth_date"/>
-    <div style="color:red" th:if="${#fields.hasErrors('birth_date')}" th:errors="*{birth_date}">Age Error</div>
+    <label for="age">Enter birth_date: </label>
+    <input type="text" th:field="*{age}" id="age"/>
+    <div style="color:red" th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Age Error</div>
     <br/>
     <input type="submit" value="Update!"/>
 </form>
