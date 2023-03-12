@@ -10,5 +10,8 @@
         <module name="NewSpringApp" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="NewSpringApp" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
